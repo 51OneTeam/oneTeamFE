@@ -2,8 +2,7 @@ import './common/base.js'
 
 class App {
   constructor () {
-    //nunjucks.configure('html', { autoescape: true });
-    var res = nunjucks.render('components/test.html', { username: 'James' });
+    var res = nunjucks.render('test.html', { username: 'James' });
     console.log('res:', res)
     this.bindEvents()
   }
