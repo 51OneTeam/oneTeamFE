@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+body 
+	perspective: 1920px;
+
+.indexbg 
+	background: url(/images/index/3nbg.png) no-repeat 0 0;
+	background-size: cover;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+.bg-1 
+	background: url(/images/index/3nbg-c1.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	animation: myfirst 4s ease 0s infinite normal;
+	-moz-animation: myfirst 4s ease 0s infinite normal;
+	-webkit-animation: myfirst 4s ease 0s infinite normal;
+	-o-animation: myfirst 4s ease 0s infinite normal;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+.bg-2 
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(/images/index/3nbg-2.png) no-repeat 0 0;
+	background-size: cover;
+	animation: myfirst-2 10s linear 0s infinite alternate;
+
+.top 
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 100;
+
+.top #logo 
+	position: absolute;
+	left: 2em;
+	top: 2em;
+	width: 12.8em;
+
+.top #logo img 
+	width: 100%;
+
+.top .nav_list 
+	position: absolute;
+	right: 2em;
+	top: 2em;
+
+.top .nav_list a 
+	background: url(/images/index/xxxx.png) repeat 0 0;
+	padding: 0.6em;
+	color: #fff;
+	font-size: 1.1em;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 0.5em;
+
+.top .nav_list a:hover 
+	color: #ffb943;
+
+#dowebok 
+	z-index: 99;
+
+.section1 
+	text-align: center;
+
+.section1 h2 
+	transition: 1s;
+	position: relative;
+	top: -10px;
+	opacity: 0;
+
+.section1 h2 img 
+	width: 100%;
+	max-width: 467px;
+
+.section1.active h2.col 
+	opacity: 1;
+	top: 0;
+
+.section1 p 
+	opacity: 0;
+	transition: all 1s ease 1s;
+	padding-top: 0;
+	position: relative;
+	top: -20px;
+
+.section1 p img 
+	width: 100%;
+	max-width: 553px;
+
+.section1.active p.col 
+	opacity: 1;
+
+.section1 a 
+	position: relative;
+	z-index: 999;
+	opacity: 0;
+	top: -10px;
+	transition: all 1s ease 1s;
+
+.section1 a img 
+
+.section1.active a.col 
+	top: 0;
+	opacity: 1;
+
+.sec2-area 
+	width: 1000px;
+	height: 630px;
+	position: relative;
+	left: 50%;
+	margin-left: -500px;
+	transform: scale(0.8, 0.8);
+	transition: all 1s ease 0s;
+	opacity: 0
+
+.section2.active .sec2-area 
+	opacity: 1;
+
+#sec2-1, #sec2-2, #sec2-3, #sec2-4, #sec2-5, #sec2-6 
+	position: absolute;
+	opacity: 0;
+
+#sec2-1 
+	left: 11px;
+	top: 159px;
+	transition: 1s;
+
+#sec2-2 
+	top: 61px;
+	left: 285px;
+	transition: 1s;
+
+#sec2-3 
+	top: 182px;
+	left: 700px;
+	transition: 1s;
+
+#sec2-4 
+	left: 218px;
+	top: 315px;
+	transition: 1s;
+
+#sec2-5 
+	left: 539px;
+	top: 353px;
+	transition: 1s;
+
+#sec2-6 
+	width: 100%;
+	top: 570px;
+	text-align: center;
+	left: -10px;
+	transition: all 1s ease 0.6s;
+
+.section2.active #sec2-6 
+	opacity: 1;
+	left: 0;
+
+.section2.active #sec2-1 
+	opacity: 1;
+	left: 21px;
+	transition-delay: 1.6s;
+
+.section2.active #sec2-2 
+	opacity: 1;
+	left: 295px;
+	transition-delay: 1.6s;
+
+.section2.active #sec2-3, .section2.active #sec2-4 
+	opacity: 1;
+	transition-delay: 2.6s;
+
+.section2.active #sec2-5 
+	opacity: 1;
+	left: 549px;
+	transition-delay: 1.6s;
+
+.sec3-area 
+	width: 1000px;
+	left: 50%;
+	margin-left: -500px;
+	position: relative;
+	height: 446px;
+	transform: scale(0.8, 0.8);
+
+#sec3-1, #sec3-2, #sec3-3, #sec3-4, #sec3-5 
+	position: absolute;
+
+#sec3-1 
+	left: 81px;
+	top: 149px;
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+	opacity: 0;
+
+#sec3-2 
+	left: 264px;
+	top: 8px;
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+	opacity: 0;
+
+#sec3-3 
+	left: 470px;
+	top: 190px;
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+	opacity: 0;
+
+#sec3-4 
+	left: 706px;
+	top: 159px;
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+	opacity: 0;
+
+#sec3-5 
+	width: 100%;
+	text-align: center;
+	top: 500px;
+	opacity: 0;
+	transition: 1s;
+
+.section3.active #sec3-1, .section3.active #sec3-2, .section3.active #sec3-3, .section3.active #sec3-4 
+	transform: scale(1, 1);
+	opacity: 1;
+	transition-delay: 1s;
+
+.section3.active #sec3-5 
+	opacity: 1;
+	transition-delay: 2s;
+
+.section4 
+	text-align: center;
+
+.section4 h2, .section4 p 
+	position: relative;
+	top: -15px;
+	opacity: 0;
+	transition: 1s;
+
+.section4.active h2, .section4.active p 
+	opacity: 1;
+	transition-delay: 1s;
+	top: 0;
+
+.sec-4-a 
+	padding-top: 40px;
+	opacity: 0;
+	transition: 1s;
+
+.section4.active .sec-4-a 
+	opacity: 1;
+	transition-delay: 2s;
+
+.sec-4-a a 
+	display: inline-block;
+	margin: 0 30px;
+
+.n_contact 
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: url(/images/index/4-n3.png) repeat 0 0;
+	z-index: 1999;
+	left: 0;
+	top: 0;
+	display: none;
+
+.contact-area 
+	background: url(/images/index/4-n1.png) no-repeat 0 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 504px;
+	height: 284px;
+	margin-top: -142px;
+	margin-left: -252px;
+
+.contact-area #close 
+	position: absolute;
+	right: 20px;
+	top: 20px;
+
+.contact-area .contact-text 
+	color: #fff;
+	padding: 65px 0 0 55px;
+	font-size: 20px;
+
+.section4 h2 img, .section4 p img 
+	width: 100%;
+
+.section4 h2 img 
+	max-width: 467px;
+
+.section4 p img 
+	max-width: 261px;
+
+@keyframes myfirst 
+	0% 
+		transform: translate3d(-120px, 155px, 0);
+	
+	30% 
+		opacity: 1;
+	
+	100% 
+		transform: translate3d(518px, -672px, 0);
+		opacity: 0;
+	
+@keyframes myfirst-2 
+	0% 
+		opacity: 0;
+	
+	100% 
+		opacity: 1;
+	
+
+@-moz-keyframes myfirst-2 
+	0% 
+		opacity: 0;
+	
+	100% 
+		opacity: 1;
+	
+
+@-webkit-keyframes myfirst-2 
+	0% 
+		opacity: 0;
+	
+	100% 
+		opacity: 1;
+	
+
+@-o-keyframes myfirst-2 
+	0% 
+		opacity: 0;
+	
+	100% 
+		opacity: 1;
+	
+
+@keyframes section1-h2 
+	0% 
+		opacity: 0;
+		top: -10px
+	
+	100% 
+		opacity: 1;
+		top: 0;
+	
+
+@-moz-keyframes section1-h2 
+	0% 
+		opacity: 0;
+		top: -10px
+	
+	100% 
+		opacity: 1;
+		top: 0;
+	
+
+@-webkit-keyframes section1-h2 
+	0% 
+		opacity: 0;
+		top: -10px
+	
+	100% 
+		opacity: 1;
+		top: 0;
+	
+
+@-o-keyframes section1-h2 
+	0% 
+		opacity: 0;
+		top: -10px
+	
+	100% 
+		opacity: 1;
+		top: 0;
+	
+
+@media screen and (max-width:420px) 
+	.top 
+		font-size: 7px;
+	
+	.top #logo 
+		width: 10em;
+		left: 1em;
+		top: 1em;
+	
+	.top .nav_list 
+		right: 1em;
+		top: 1em;
+	
+	.top .nav_list a 
+		font-size: 8px;
+		margin-left: 1px;
+	
+	.section1 
+		transform: scale(0.7, 0.7);
+	
+	.section2 
+		transform: scale(0.4, 0.4);
+		padding-top: 70%
+	
+	.section3 
+		transform: scale(0.4, 0.4);
+		padding-top: 70%
+	
+	.section4 
+		transform: scale(0.4, 0.4);
+		padding-top: 70%
+	
+	.contact-area 
+		transform: scale(0.4, 0.4);
+	
+
+@media screen and (max-width:360px) 
+	.top .nav_list 
+		right: 1em;
+		top: 1em;
+	
+	.top .nav_list a 
+		font-size: 8px;
+		margin-left: 1px;
+	

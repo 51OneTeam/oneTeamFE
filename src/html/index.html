@@ -6,52 +6,149 @@
 
 {% extends 'layouts/application.html' %}
 
+{% block css %}
+    <link rel="stylesheet" href="stylesheets/index.css">
+{% endblock %}
+
 {% block content %}
-    <div class="page-group">
-        <div class="page">
-            <!-- 标题栏 -->
-            <header class="bar bar-nav">
-                <a class="icon icon-me pull-left open-panel"></a>
-                <h1 class="title">标题</h1>
-            </header>
-
-            <!-- 这里是页面内容区 -->
-            <div class="content">
-                <div class="content-block">这里是content</div>
+    <div class="indexbg">
+    </div>
+    <div class="bg-1">
+    </div>
+    <div class="bg-2">
+    </div>
+    <div class="top">
+        <div id="logo">
+            <a href="#">
+                <img src="/images/index/logo.png" />
+            </a>
+        </div>
+        <div class="nav_list">
+            <a href="http://bp.3ncto.com" target="_blank">
+                我是创业者
+            </a>
+            <a href="https://jinshuju.net/f/RfO0gd" target="_blank">
+                我是技术合伙人
+            </a>
+            <a href="http://www.3ncto.com/case.php" target="_blank">
+                3N案例
+            </a>
+        </div>
+    </div>
+    <div id="fullpage">
+        <div class="section section1 active">
+            <h2>
+                <img src="/images/index/1-1.png" />
+            </h2>
+            <p>
+                <img src="/images/index/1-2.png" />
+            </p>
+            <a href="#page2">
+                <img src="/images/index/1-3.png" />
+            </a>
+            <div style="padding-top:90px;">
+                <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action"
+                target="_blank" style="color:#fff;text-decoration:none;">
+                    粤ICP备15062249 Copyright © 2015 广州恩恩网络科技有限公司版权所有
+                </a>
             </div>
-
-            <!-- 工具栏 -->
-            <nav class="bar bar-tab">
-                <a class="tab-item active" href="#">
-                    <span class="icon icon-home"></span>
-                    <span class="tab-label">页面1</span>
+        </div>
+        <div class="section section2">
+            <div class="sec2-area">
+                <div id="sec2-1">
+                    <img src="/images/index/2-2.png" />
+                </div>
+                <div id="sec2-2">
+                    <img src="/images/index/2-3.png" />
+                </div>
+                <div id="sec2-3">
+                    <img src="/images/index/2-4.png" />
+                </div>
+                <div id="sec2-4">
+                    <img src="/images/index/2-5.png" />
+                </div>
+                <div id="sec2-5">
+                    <img src="/images/index/2-6.png" />
+                </div>
+                <div id="sec2-6">
+                    <img src="/images/index/2-1.png" />
+                </div>
+            </div>
+            <div style="padding-top:90px; text-align:center;">
+                <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action"
+                target="_blank" style="color:#fff;text-decoration:none;">
+                    粤ICP备15062249 Copyright © 2015 广州恩恩网络科技有限公司版权所有
                 </a>
-                <a class="tab-item" href="/page2.html">
-                    <span class="icon icon-star"></span>
-                    <span class="tab-label">页面2</span>
+            </div>
+        </div>
+        <div class="section section3">
+            <div class="sec3-area">
+                <div id="sec3-1">
+                    <img src="/images/index/3-2.png" />
+                </div>
+                <div id="sec3-2">
+                    <img src="/images/index/3-3.png" />
+                </div>
+                <div id="sec3-3">
+                    <img src="/images/index/3-4.png" />
+                </div>
+                <div id="sec3-4">
+                    <img src="/images/index/3-5.png" />
+                </div>
+                <div id="sec3-5">
+                    <img src="/images/index/3-1.png" />
+                </div>
+            </div>
+            <div style="padding-top:90px; text-align:center;">
+                <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action"
+                target="_blank" style="color:#fff;text-decoration:none;">
+                    粤ICP备15062249 Copyright © 2015 广州恩恩网络科技有限公司版权所有
                 </a>
-                <a class="tab-item" href="/page3.html">
-                    <span class="icon icon-settings"></span>
-                    <span class="tab-label">页面3</span>
+            </div>
+        </div>
+        <div class="section section4">
+            <h2>
+                <img src="/images/index/1-1.png" />
+            </h2>
+            <p>
+                <img src="/images/index/4-1.png" />
+            </p>
+            <div class="sec-4-a">
+                <a href="javascript:void(0)" id="open_contact">
+                    <img src="/images/index/4-2.png" />
                 </a>
-            </nav>
+                <a href="http://www.3ncto.com/about.php">
+                    <img src="/images/index/4-3.png" />
+                </a>
+            </div>
+            <div class="sec-4-a">
+                <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action"
+                target="_blank" style="color:#fff;text-decoration:none;">
+                    粤ICP备15062249 Copyright © 2015 广州恩恩网络科技有限公司版权所有
+                </a>
+            </div>
         </div>
     </div>
-
-    <!-- popup, panel 等放在这里 -->
-    <div class="panel-overlay"></div>
-    <!-- Left Panel with Reveal effect -->
-    <div class="panel panel-left panel-reveal">
-        <div class="content-block">
-            <p>这是一个侧栏</p>
-            <p></p>
-            <!-- Click on link with "close-panel" class will close panel -->
-            <p><a href="#" class="close-panel">关闭</a></p>
+    <div class="n_contact">
+        <div class="contact-area">
+            <a href="javascript:void(0)" id="close">
+                <img src="/images/index/4-n2.png" />
+            </a>
+            <div class="contact-text">
+                <p>
+                    微信公众号：i3NCTO
+                </p>
+                <p>
+                    联系我们： bp@3ncto.com
+                </p>
+                <p>
+                    合作电话： 郭先生 133-1609-1659
+                </p>
+            </div>
         </div>
     </div>
-
 {% endblock %}
 
 {% block javascript %}
-<script src="javascripts/app.js"></script>
+    <script src="javascripts/index.js"></script>
 {% endblock %}

@@ -1,5 +1,5 @@
-import '../vendor/nunjucks.js'
-import '../vendor/jquery.js'
+import '../vendor/nunjucks'
+import '../vendor/jquery'
 
 class Base {
     constructor () {

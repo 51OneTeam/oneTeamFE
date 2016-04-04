@@ -21,7 +21,7 @@
       "dest": "javascripts",
       "extractSharedJs": true,
       "entries": {
-        "app": ["./app.js"],
+        "index": ["./index.js"],
         "page": ["./page.js"]
       },
       "extensions": ["js"]
