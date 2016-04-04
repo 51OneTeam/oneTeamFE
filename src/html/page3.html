@@ -1,0 +1,25 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+    <!-- page 3 -->
+    <div class="page-group">
+        <div class="page" id='router3'>
+          <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+              <span class="icon icon-left"></span>
+              返回
+            </a>
+            <h1 class='title'>路由</h1>
+          </header>
+          <div class="content">
+            <div class="content-block">
+              这是ajax 加载的新页面，点击左上角的 <a href="#" class='back'>返回</a> 按钮返回上一页。
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+<script src="javascripts/page.js"></script>
+{% endblock %}
